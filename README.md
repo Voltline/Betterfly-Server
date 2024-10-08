@@ -1,16 +1,17 @@
-# QuickIM
+# Betterfly-Server
 > *这是一个尝试自行实现即时通讯软件的小项目*
+> *本项目基于QuickIM项目继续开发*
 
-![License](https://img.shields.io/github/license/Voltline/QuickIM)
-![Issues](https://img.shields.io/github/issues/Voltline/QuickIM)
-![Stars](https://img.shields.io/github/stars/Voltline/QuickIM)
+![License](https://img.shields.io/github/license/Voltline/Betterfly-Server)
+![Issues](https://img.shields.io/github/issues/Voltline/Betterfly-Server)
+![Stars](https://img.shields.io/github/stars/Voltline/Betterfly-Server)
 
 ## 项目概况
-* 项目开始于2024年4月23日
+* 项目开始于2024年10月8日
 * 项目基于MIT协议开源
 
 ## Project Brief Introduction
-* The project starts on April 23, 2024
+* The project starts on October 8, 2024
 * The project based on MIT protocol
 
 ## 注意事项
