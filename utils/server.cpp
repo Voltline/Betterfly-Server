@@ -1,6 +1,7 @@
 #include "server.h"
 #include <stdexcept>
 #include <cstring>
+#include <iostream>
 
 MessageQueue<MessageType> TCPServer::mq = MessageQueue<MessageType>();
 std::map<int, int> TCPServer::account = std::map<int, int>();

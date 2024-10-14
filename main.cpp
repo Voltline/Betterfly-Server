@@ -1,6 +1,5 @@
 #include "utils/client.h"
 #include "utils/server.h"
-#include "utils/dbhandler.h"
 #include <iostream>
 #include <pthread.h>
 using namespace std;
@@ -22,7 +21,6 @@ void terminate_handle()
 
 int main(int argc, const char* argv[])
 {
-    dbhandler db;
     std::set_terminate(terminate_handle);
     if (argc == 3) {
         TCPClient client{ "../config/config.json", stoi(argv[1]), argv[2] };

@@ -5,7 +5,7 @@
 #include <nlohmann/json.hpp>
 #include <boost/mysql.hpp>
 
-class dbhandler
+class DatabaseHandler
 {
 private:
     nlohmann::json config;
@@ -20,8 +20,9 @@ private:
     boost::asio::ip::tcp::resolver resolver;
     boost::asio::ip::basic_resolver_results<boost::asio::ip::tcp> endpoints;
 public:
-    dbhandler(const std::string& path = "../config/dbconfig.json");
-    ~dbhandler();
+    DatabaseHandler(const std::string& path = "../config/dbconfig.json");
+    DatabaseHandler(const DatabaseHandler&) = delete;
+    ~DatabaseHandler();
 };
 
 

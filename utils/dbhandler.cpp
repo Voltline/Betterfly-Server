@@ -2,7 +2,7 @@
 #include <spdlog/spdlog.h>
 #include <fstream>
 
-dbhandler::dbhandler(const std::string& path)
+DatabaseHandler::DatabaseHandler(const std::string& path)
     : ctx()
     , ssl_ctx(boost::asio::ssl::context::tls_client)
     , conn(ctx, ssl_ctx)
@@ -34,7 +34,7 @@ dbhandler::dbhandler(const std::string& path)
     }
 }
 
-dbhandler::~dbhandler()
+DatabaseHandler::~DatabaseHandler()
 {
     conn.close();
 }
